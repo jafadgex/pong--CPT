@@ -29,6 +29,7 @@ basic.forever(function () {
         directionY = -1
         directionX = randint(-1, 1)
         music.playMelody("- - - - - - - C5 ", 5000)
+        game.addScore(1)
     } else {
         if (Ball.get(LedSpriteProperty.Y) <= 0) {
             directionY = 1
